@@ -6,7 +6,7 @@ import design5.PointCP5;
 import java.util.Random;
 
 public class test {
-    static int length = 5000;
+    static int length = 1000000000;
 
     public static void main(String[] args) {
         Random random = new Random();
