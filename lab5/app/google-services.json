@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "922783954191",
+    "firebase_url": "https://lab5-ad078.firebaseio.com",
+    "project_id": "lab5-ad078",
+    "storage_bucket": "lab5-ad078.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:922783954191:android:e886618f6b5390b7ce3a7a",
+        "android_client_info": {
+          "package_name": "com.example.lab5"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "922783954191-1ueinnjjsicnljahc3ddoqcioi5c1bdi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHK5gnuCM7N_ckic-CJujyyCZA96NOaYE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "922783954191-1ueinnjjsicnljahc3ddoqcioi5c1bdi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:922783954191:android:6e0852cb1004a434ce3a7a",
+        "android_client_info": {
+          "package_name": "mgarzon.createbest.productcatalog"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "922783954191-1ueinnjjsicnljahc3ddoqcioi5c1bdi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHK5gnuCM7N_ckic-CJujyyCZA96NOaYE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "922783954191-1ueinnjjsicnljahc3ddoqcioi5c1bdi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
