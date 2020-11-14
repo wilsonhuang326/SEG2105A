@@ -6,6 +6,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.content.Context;
 import android.content.ContentValues;
 import android.database.Cursor;
+import android.util.Log;
 
 import java.sql.SQLData;
 
@@ -16,6 +17,8 @@ public class MyDBHandler extends SQLiteOpenHelper {
     private static final String COLUMN_ID = "_id";
     private static final String COLUMN_PRODUCTNAME = "productname";
     private static final String COLUMN_SKU = "SKU";
+    private static final String COLUMN_COLOR = "COLOR";
+
 
     public MyDBHandler(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -24,6 +27,8 @@ public class MyDBHandler extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
+//        String CREATE_PRODUCT_TABLE = "CREATE TABLE " + TABLE_PRODUCTS + "("
+//                + COLUMN_ID + " INTEGER PRIMARY KEY," + COLUMN_PRODUCTNAME + " TEXT," + COLUMN_SKU + " INTEGER,"+COLUMN_COLOR+" TEXT)";
         String CREATE_PRODUCT_TABLE = "CREATE TABLE " + TABLE_PRODUCTS + "("
                 + COLUMN_ID + " INTEGER PRIMARY KEY," + COLUMN_PRODUCTNAME + " TEXT," + COLUMN_SKU + " INTEGER)";
         db.execSQL(CREATE_PRODUCT_TABLE);
@@ -40,6 +45,7 @@ public class MyDBHandler extends SQLiteOpenHelper {
         ContentValues values = new ContentValues();
         values.put(COLUMN_PRODUCTNAME, product.getProductName());
         values.put(COLUMN_SKU, product.getSku());
+//        values.put(COLUMN_COLOR, product.get_color());
         db.insert(TABLE_PRODUCTS, null, values);
         db.close();
     }
@@ -54,6 +60,8 @@ public class MyDBHandler extends SQLiteOpenHelper {
             product.setID(Integer.parseInt(cursor.getString(0)));
             product.setProductName(cursor.getString(1));
             product.setSku(Integer.parseInt(cursor.getString(2)));
+//            product.set_color(cursor.getString(3));
+
         }else {
             product=null;
         }

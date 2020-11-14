@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     TextView idView;
     EditText productBox;
     EditText skuBox;
+//    EditText color;
 
 
     @Override
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         idView = (TextView) findViewById(R.id.productID);
         productBox = (EditText) findViewById(R.id.productName);
         skuBox = (EditText) findViewById(R.id.productSku);
+//        color=(EditText) findViewById(R.id.productColor);
     }
 
 
@@ -29,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         int sku = Integer.parseInt(skuBox.getText().toString());
 
+//        Product product = new Product(productBox.getText().toString(), sku,color.getText().toString());
         Product product = new Product(productBox.getText().toString(), sku);
 
         // TODO: add to database
@@ -38,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         productBox.setText("");
 
         skuBox.setText("");
+//        color.setText("");
     }
 
 
@@ -49,6 +53,8 @@ public class MainActivity extends AppCompatActivity {
         if (product != null) {
             idView.setText(String.valueOf(product.getID()));
             skuBox.setText(String.valueOf(product.getSku()));
+//            color.setText(String.valueOf(product.get_color()));
+
         } else {
             idView.setText("No Match Found");
         }

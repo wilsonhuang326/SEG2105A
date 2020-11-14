@@ -4,19 +4,33 @@ public class Product {
     private int _id;
     private String _productname;
     private int _sku;
+//    private String _color;
+
 
     public Product() {
     }
-    public Product(int id, String productname, int sku) {
-        _id = id;
-        _productname = productname;
-        _sku = sku;
-    }
+//    public Product(int id, String productname, int sku,String color) {
+//        _id = id;
+//        _productname = productname;
+//        _sku = sku;
+//        _color = color;
+//    }
+//    public Product(String productname, int sku,String color) {
+//        _productname = productname;
+//        _sku = sku;
+//        _color = color;
+//
+//    }
+public Product(int id, String productname, int sku) {
+    _id = id;
+    _productname = productname;
+    _sku = sku;
+}
     public Product(String productname, int sku) {
         _productname = productname;
         _sku = sku;
-    }
 
+    }
     public void setID(int id) {
         _id = id;
     }
@@ -35,4 +49,11 @@ public class Product {
     public int getSku() {
         return _sku;
     }
+
+//    public void set_color(String color) {
+//        _color = color;
+//    }
+//    public String get_color() {
+//        return _color;
+//    }
 }
